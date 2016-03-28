@@ -1,0 +1,18 @@
+SMAP
+Delete_005fCase_jsp.java
+JSP
+*S JSP
+*F
++ 0 Delete_Case.jsp
+Delete_Case.jsp
+*L
+5,6:61
+10:341,9
+10,68:68
+77:363,9
+77,5:138
+81:391,11
+82:402,5
+83:407
+83,180:145
+*E

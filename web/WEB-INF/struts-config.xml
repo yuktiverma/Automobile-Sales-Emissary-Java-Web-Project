@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <!-- configuration starts here -->
+        <form-bean name="Login_FormBean" type="Beans_Action.Login_FormBean"/>
+        <form-bean name="DeleteTeam_FormBean" type="Beans_Action.DeleteTeam_FormBean"/>
+        <form-bean name="DeleteTeamType_FormBean" type="Beans_Action.DeleteTeamType_FormBean"/>
+        <form-bean name="DeleteEmployee_FormBean" type="Beans_Action.DeleteEmployee_FormBean"/>
+        <form-bean name="DeleteDesig_FormBean" type="Beans_Action.DeleteDesig_FormBean"/>
+        <form-bean name="DeleteBranch_FormBean" type="Beans_Action.DeleteBranch_FormBean"/>
+
+        <form-bean name="Edit_Employee_FromBean" type="Beans_Action.Edit_Employee_FromBean"/>
+        <form-bean name="Edit_TeamFormBean" type="Beans_Action.Edit_TeamFormBean"/>
+        <form-bean name="EditTeamType_FormBean" type="Beans_Action.EditTeamType_FormBean"/>
+        <form-bean name="Edit_DesignationFormBean" type="Beans_Action.Edit_DesignationFormBean"/>
+        <form-bean name="Edit_BranchFormBean" type="Beans_Action.Edit_BranchFormBean"/>
+        <form-bean name="Edit_Org_FormBean" type="Beans_Action.Edit_Org_FormBean"/>
+
+        <form-bean name="ShowAll_DesignationFormBean" type="Beans_Action.ShowAll_DesignationFormBean"/>
+        <form-bean name="ShowAll_TeamTypeFromBean" type="Beans_Action.ShowAll_TeamTypeFromBean"/>
+        <form-bean name="ShowAll_TeamFormBean" type="Beans_Action.ShowAll_TeamFormBean"/>
+        <form-bean name="ShowAll_EmployeeFormBean" type="Beans_Action.ShowAll_EmployeeFormBean"/>
+        <form-bean name="ShowAll_BranchFormBean" type="Beans_Action.ShowAll_BranchFormBean"/>
+        <form-bean name="ShowAll_OrgFormBean" type="Beans_Action.ShowAll_OrgFormBean"/>
+
+        <form-bean name="Add_TeamFormBean" type="Beans_Action.Add_TeamFormBean"/>
+        <form-bean name="Add_EmployeeFormBean" type="Beans_Action.Add_EmployeeFormBean"/>
+        <form-bean name="Add_TeamTypeFormBean" type="Beans_Action.Add_TeamTypeFormBean"/>
+        <form-bean name="Add_DesignationFormBean" type="Beans_Action.Add_DesignationFormBean"/>
+        <form-bean name="Add_BranchFormBean" type="Beans_Action.Add_BranchFormBean"/>
+        <form-bean name="Add_Org_FormBean" type="Beans_Action.Add_Org_FormBean"/>
+    <!-- configuration ends here -->
+
+    <!-- configuration-presales starts here -->
+        <form-bean name="Show_All_BudgetBean" type="Beans_Action.Show_All_BudgetBean"/>
+        <form-bean name="Show_All_BaseModelBean" type="Beans_Action.Show_All_BaseModelBean"/>
+        <form-bean name="Show_All_ModelBean" type="Beans_Action.Show_All_ModelBean"/>
+        <form-bean name="Show_All_TargetBean" type="Beans_Action.Show_All_TargetBean"/>
+        <form-bean name="Show_All_PriceBean" type="Beans_Action.Show_All_PriceBean"/>
+        <form-bean name="Show_All_ColorBean" type="Beans_Action.Show_All_ColorBean"/>
+
+        <form-bean name="EditBudgetBean" type="Beans_Action.EditBudgetBean"/>
+        <form-bean name="EditBaseModelBean" type="Beans_Action.EditBaseModelBean"/>
+        <form-bean name="EditModelBean" type="Beans_Action.EditModelBean"/>
+        <form-bean name="EditTargetBean" type="Beans_Action.EditTargetBean"/>
+        <form-bean name="EditPriceBean" type="Beans_Action.EditPriceBean"/>
+        <form-bean name="EditColorBean" type="Beans_Action.EditColorBean"/>
+
+        <form-bean name="DeleteBudgetBean" type="Beans_Action.DeleteBudgetBean"/>
+        <form-bean name="DeleteBaseModelBean" type="Beans_Action.DeleteBaseModelBean"/>
+        <form-bean name="DeleteModelBean" type="Beans_Action.DeleteModelBean"/>
+        <form-bean name="DeleteTargetBean" type="Beans_Action.DeleteTargetBean"/>
+        <form-bean name="DeletePriceBean" type="Beans_Action.DeletePriceBean"/>
+        <form-bean name="DeleteColorBean" type="Beans_Action.DeleteColorBean"/>
+
+
+        <form-bean name="AddBudgetBean" type="Beans_Action.AddBudgetBean"/>
+        <form-bean name="AddBaseModelBean" type="Beans_Action.AddBaseModelBean"/>
+        <form-bean name="AddModelBean" type="Beans_Action.AddModelBean"/>
+        <form-bean name="AddTargetBean" type="Beans_Action.AddTargetBean"/>
+        <form-bean name="AddPriceBean" type="Beans_Action.AddPriceBean"/>
+        <form-bean name="AddColorBean" type="Beans_Action.AddColorBean"/>
+     
+    <!-- configuration-presales ends here -->
+    
+        <!--presales Starts here-->
+        <form-bean name="Show_Area_CityFormBean" type="Beans_Action.Show_Area_CityFormBean"/>
+        <form-bean name="Show_AreaFormBean" type="Beans_Action.Show_AreaFormBean"/>
+        <form-bean name="Edit_AreaFormBean" type="Beans_Action.Edit_AreaFormBean"/>
+        <form-bean name="ShowAll_AreaFormBean" type="Beans_Action.ShowAll_AreaFormBean"/>
+        <form-bean name="Add_AreaFormBean" type="Beans_Action.Add_AreaFormBean"/>
+        <form-bean name="Show_IndustryFormBean" type="Beans_Action.Show_IndustryFormBean"/>
+        <form-bean name="ShowAll_IndustryFormBean" type="Beans_Action.ShowAll_IndustryFormBean"/>
+        <form-bean name="ShowAll_ActionFormBean" type="Beans_Action.ShowAll_ActionFormBean"/>
+        <form-bean name="Add_IndustryFormBean" type="Beans_Action.Add_IndustryFormBean"/>
+        <form-bean name="EditProspect_FormBean" type="Beans_Action.EditProspect_FormBean"/>
+        <form-bean name="DeleteProspect_formBean" type="Beans_Action.DeleteProspect_formBean"/>
+        <form-bean name="Add_ProspectFormBean" type="Beans_Action.Add_ProspectFormBean"/>
+        <form-bean name="DeleteCase_FormBean" type="Beans_Action.DeleteCase_FormBean"/>
+        <form-bean name="EditCase_FormBean" type="Beans_Action.EditCase_FormBean"/>
+        <form-bean name="AddCase_FormBean" type="Beans_Action.AddCase_FormBean"/>
+        <form-bean name="Add_ActionFormBean" type="Beans_Action.Add_ActionFormBean"/>
+         <!--presales end-->
+
+         <!-- value to customer start-->
+         <form-bean name="DeleteSource_FormBean" type="Beans_Action.DeleteSource_FormBean"/>
+        <form-bean name="Edit_PaymentFormBean" type="Beans_Action.Edit_PaymentFormBean"/>
+        <form-bean name="Add_PaymentFormBean" type="Beans_Action.Add_PaymentFormBean"/>
+        <form-bean name="Edit_SchemeFormBean" type="Beans_Action.Edit_SchemeFormBean"/>
+        <form-bean name="Delete_SchemeFormBean" type="Beans_Action.Delete_SchemeFormBean"/>
+        <form-bean name="Delete_OrderFormBean" type="Beans_Action.Delete_OrderFormBean"/>
+        <form-bean name="Edit_OrderFormBean" type="Beans_Action.Edit_OrderFormBean"/>
+        <form-bean name="Add_SourceFormBean" type="Beans_Action.Add_SourceFormBean"/>
+        <form-bean name="Add_SchemeFormBean" type="Beans_Action.Add_SchemeFormBean"/>
+        <form-bean name="Add_Finance_SourceFormBean" type="Beans_Action.Add_Finance_SourceFormBean"/>
+        <form-bean name="Add_OrderFormBean" type="Beans_Action.Add_OrderFormBean"/>
+        
+         <!-- value to customer end-->
+<!--Inventory Reprots start-->
+ <form-bean name="InventoryReportByMonth" type="Beans_Action.InventoryReportByMonth"/>
+        <form-bean name="InventoryByYear_Bean" type="Beans_Action.InventoryByYear_Bean"/>
+        <form-bean name="OverAllStock_FormBean" type="Beans_Action.OverAllStock_FormBean"/>
+        <form-bean name="Overall_FormBean" type="Beans_Action.Overall_FormBean"/>
+    <!--enventory reports end-->
+
+
+         <!-- Misc List starts here -->
+        <form-bean name="BranchNameBean" type="Beans_Action.BranchNameBean"/>
+        <form-bean name="TargetBaseBean" type="Beans_Action.TargetBaseBean"/>
+        <form-bean name="TargetBean" type="Beans_Action.TargetBean"/>
+        <form-bean name="EmployeeBean" type="Beans_Action.EmployeeBean"/>
+        <form-bean name="ModelBean" type="Beans_Action.ModelBean"/>
+        <form-bean name="MiscListBean" type="Beans_Action.MiscListBean"/>
+         <!-- Misc ends here-->
+
+    </form-beans>
+    
+    <global-exceptions></global-exceptions>
+
+    <global-forwards>
+        <forward name="welcome"  path="/Welcome.do"/>
+    </global-forwards>
+
+    <action-mappings>
+        <!-- configuration starts here -->
+        <action input="/Add_Org.jsp" name="Add_Org_FormBean" path="/add_org" scope="session" type="Beans_Action.Add_OrgAction">            
+            <forward name="Ok" path="/ss.jsp"></forward>
+            <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+        <action input="/Edit_Org.jsp" name="Edit_Org_FormBean" path="/editorg" scope="session" type="Beans_Action.Edit_OrgAction">
+             <forward name="Ok" path="/ss.jsp"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+        <action input="/Add_Branch.jsp" name="Add_BranchFormBean" path="/addbranch" scope="session" type="Beans_Action.Add_BranchAction">
+             <forward name="Ok" path="/ss.jsp"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+        <action input="/Add_Designation.jsp" name="Add_DesignationFormBean" path="/adddesig" scope="session" type="Beans_Action.Add_DesignationAction">
+             <forward name="Ok" path="success"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/Add_TeamType.jsp" name="Add_TeamTypeFormBean" path="/addteamtype" scope="session" type="Beans_Action.Add_TeamTypeAction">
+             <forward name="Ok" path="success"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/Add_Employee.jsp" name="Add_EmployeeFormBean" path="/addemployee" scope="session" type="Beans_Action.Add_EmployeeAction">
+             <forward name="Ok" path="/ss.jsp"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+        <action input="/Add_Team.jsp" name="Add_TeamFormBean" path="/addteam" scope="session" type="Beans_Action.Add_TeamAction">
+             <forward name="Ok" path="success"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/menu.jsp" name="ShowAll_OrgFormBean" path="/showallorg" scope="session" type="Beans_Action.ShowAll_OrgAction">
+             <forward name="Ok" path="ShowAll_Org"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/menu.jsp" name="ShowAll_BranchFormBean" path="/showallbranch" scope="session" type="Beans_Action.ShowAll_BranchAction">
+             <forward name="Ok" path="ShowALL_Branch"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/menu.jsp" name="ShowAll_EmployeeFormBean" path="/showallemp" scope="session" type="Beans_Action.ShowALL_EmployeeAction">
+            <forward name="Ok" path="ShowALL_Employee"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/menu.jsp" name="ShowAll_TeamFormBean" path="/showallteam" scope="session" type="Beans_Action.ShowAll_TeamAction">
+             <forward name="Ok" path="ShowALL_Team"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/menu.jsp" name="ShowAll_TeamTypeFromBean" path="/showall_team_type" scope="session" type="Beans_Action.ShowAll_TeamTypeAction">
+            
+            <forward name="Ok" path="ShowAll_TeamType"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/menu.jsp" name="ShowAll_DesignationFormBean" path="/showalldesig" scope="session" type="Beans_Action.ShowAll_DesigAction">
+             <forward name="Ok" path="ShowAll_Designation"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/Edit_Branch.jsp" name="Edit_BranchFormBean" path="/editbranch" scope="session" type="Beans_Action.Edit_BranchAction">
+              <forward name="Ok" path="/ss.jsp"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+            
+        </action>
+        <action input="/Edit_Designation.jsp" name="Edit_DesignationFormBean" path="/editdesig" scope="session" type="Beans_Action.Edit_DesignationAction">
+            <forward name="Ok" path="success"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+            
+        </action>
+        <action input="/Edit_TeamType.jsp" name="EditTeamType_FormBean" path="/editteamtype" scope="session" type="Beans_Action.Edit_TeamTypeAction">
+           <forward name="Ok" path="success"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+            
+        </action>
+        <action input="/Edit_Team.jsp" name="Edit_TeamFormBean" path="/editteam" scope="session" type="Beans_Action.EditTeam_Action">
+             <forward name="Ok" path="success"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+            
+        </action>
+        <action input="/Edit_Employee.jsp" name="Edit_Employee_FromBean" path="/editemp" scope="session" type="Beans_Action.EditEmployee_action">
+            <forward name="Ok" path="/ss.jsp"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+            
+        </action>
+        <action input="/Delete_Branch.jsp" name="DeleteBranch_FormBean" path="/deletebranch" scope="session" type="Beans_Action.DeleteBranch_Action">
+            <forward name="Ok" path="/ss.jsp"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+            
+        </action>
+        <action input="/Delete_Designation.jsp" name="DeleteDesig_FormBean" path="/deletedesig" scope="session" type="Beans_Action.DeleteDesig_Action">
+            <forward name="Ok" path="success"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/Delete_Employee.jsp" name="DeleteEmployee_FormBean" path="/deleteemp" scope="session" type="Beans_Action.DeleteEmployee_Action">
+             <forward name="Ok" path="/ss.jsp"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+        <action input="/Delete_TeamType.jsp" name="DeleteTeamType_FormBean" path="/deleteteamtype" scope="session" type="Beans_Action.DeleteTeamType_Action">
+             <forward name="Ok" path="success"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+        <action input="/Delete_Team.jsp" name="DeleteTeam_FormBean" path="/deleteteam" scope="session" type="Beans_Action.DeleteTeam_Action">
+             <forward name="Ok" path="success"></forward>
+             <forward name="Not Ok" path="fail"></forward>
+        </action>
+    <action input="/menu_1.jsp" name="Login_FormBean" path="/afterlogin" scope="session" type="Beans_Action.Login_Action">        
+             <forward name="Ok" path="afterloginpage"></forward>
+    </action>
+    <action path="/Welcome" forward="/welcomeStruts.jsp"/>
+    <action path="/myhome" forward="apphomepage"/>
+    <action path="/Add_org" forward="Add_orgpage"/>
+    <action path="/Show_Org" forward="Show_orgpage"/>
+    <action path="/Edit_Org" forward="Edit_orgpage"/>
+    <action path="/Add_branch" forward="add_branch"/>
+    <action path="/Show_Branch" forward="showbranch"/>
+    <action path="/Edit_Branch" forward="Edit_Branch"/>
+    <action path="/Delete_Branch" forward="delete_branch"/>
+    <action path="/add_teamtype" forward="add_teamtype"/>
+    <action path="/add_team" forward="add_team"/>
+    <action path="/Show_TeamType" forward="Show_TeamType"/>
+    <action path="/Edit_TeamType" forward="Edit_TeamType"/>
+    <action path="/Delete_TeamType" forward="Delete_TeamType"/>
+    <action path="/Show_Team" forward="Show_Team"/>
+    <action path="/Edit_Team" forward="Edit_Team"/>
+    <action path="/Delete_Team" forward="Delete_Team"/>
+    <action path="/Add_Employee" forward="Add_Employee"/>
+    <action path="/Show_EmpFull" forward="Show_EmpFull"/>
+    <action path="/Show_EmpFull" forward="Show_EmpFull"/>
+    <action path="/Edit_Employee" forward="Edit_Employee"/>
+    <action path="/Delete_Employee" forward="Delete_Employee"/>
+    <action path="/Show_Designation" forward="Show_Designation"/>
+    <action path="/Edit_Designation" forward="Edit_Designation"/>
+    <action path="/Delete_Designation" forward="Delete_Designation"/>
+    <action path="/add_designation" forward="add_designation"/>
+    <action path="/logout" forward="Logout"/>
+    <action path="/AfterLogin" forward="afterloginpage"/>
+    <!-- configuration ends here -->
+
+    <!-- configuration-presales starts here -->
+    <action input="/Add_Budget.jsp" name="AddBudgetBean" path="/addBudget" scope="session" type="Beans_Action.AddBudgetAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Add_Base_Model.jsp" name="AddBaseModelBean" path="/addBaseModel" scope="session" type="Beans_Action.AddBaseModelAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Add_Model.jsp" name="AddModelBean" path="/addModel" scope="session" type="Beans_Action.AddModelAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Add_Target.jsp" name="AddTargetBean" path="/addTarget" scope="session" type="Beans_Action.AddTargetAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+        </action>
+    <action input="/Add_Price.jsp" name="AddPriceBean" path="/addPrice" scope="session" type="Beans_Action.AddPriceAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Add_Color.jsp" name="AddColorBean" path="/addColor" scope="session" type="Beans_Action.AddColorAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+
+
+    <action input="/menu1.jsp" name="Show_All_BudgetBean" path="/showAllBudget" scope="session" type="Beans_Action.Show_All_BudgetAction" validate="false">
+            <forward name="Ok" path="Show_All_Budget"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/menu1.jsp" name="Show_All_BaseModelBean" path="/showAllBaseModel" scope="session" type="Beans_Action.Show_All_BaseModelAction" validate="false">
+            <forward name="Ok" path="Show_All_Base_Model"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/menu1.jsp" name="Show_All_ModelBean" path="/showAllModel" scope="session" type="Beans_Action.Show_All_ModelAction" validate="false">
+            <forward name="Ok" path="Show_All_Model"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/menu1.jsp" name="Show_All_TargetBean" path="/showAllTarget" scope="session" type="Beans_Action.Show_All_TargetAction" validate="false">
+            <forward name="Ok" path="Show_All_Target"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/menu1.jsp" name="Show_All_PriceBean" path="/showAllPrice" scope="session" type="Beans_Action.Show_All_PriceAction" validate="false">
+            <forward name="Ok" path="Show_All_Price"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/menu1.jsp" name="Show_All_ColorBean" path="/showAllColor" scope="session" type="Beans_Action.Show_All_ColorAction" validate="false">
+            <forward name="Ok" path="Show_All_Color"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    
+
+    <action input="/Edit_Budget.jsp" name="EditBudgetBean" path="/editBudget" scope="session" type="Beans_Action.EditBudgetAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Edit_Base_Model.jsp" name="EditBaseModelBean" path="/editBaseModel" scope="session" type="Beans_Action.EditBaseModelAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Edit_Model.jsp" name="EditModelBean" path="/editModel" scope="session" type="Beans_Action.EditModelAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Edit_Target.jsp" name="EditTargetBean" path="/editTarget" scope="session" type="Beans_Action.EditTargetAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Edit_Price.jsp" name="EditPriceBean" path="/editPrice" scope="session" type="Beans_Action.EditPriceAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Edit_Color.jsp" name="EditColorBean" path="/editColor" scope="session" type="Beans_Action.EditColorAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+
+    
+    <action input="/Delete_Budget.jsp" name="DeleteBudgetBean" path="/deleteBudget" scope="session" type="Beans_Action.DeleteBudgetAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Delete_Base_Model.jsp" name="DeleteBaseModelBean" path="/deleteBaseModel" scope="session" type="Beans_Action.DeleteBaseModelAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Delete_Model.jsp" name="DeleteModelBean" path="/deleteModel" scope="session" type="Beans_Action.DeleteModelAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Delete_Target.jsp" name="DeleteTargetBean" path="/deleteTarget" scope="session" type="Beans_Action.DeleteTargetAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    <action input="/Delete_Price.jsp" name="DeletePriceBean" path="/deletePrice" scope="session" type="Beans_Action.DeletePriceAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>  
+    <action input="/Delete_Color.jsp" name="DeleteColorBean" path="/deleteColor" scope="session" type="Beans_Action.DeleteColorAction" validate="false">
+            <forward name="Ok" path="success"></forward>
+            <forward name="NotOk" path="fail"></forward>
+    </action>
+    
+
+    <action path="/Show_All_Budget" forward="Show_All_Budget"/>
+    <action path="/Show_All_Base_Model" forward="Show_All_Base_Model"/>
+    <action path="/Show_All_Model" forward="Show_All_Model"/>
+    <action path="/Show_All_Target" forward="Show_All_Target"/>
+    <action path="/Show_All_Price" forward="Show_All_Price"/>
+    <action path="/Show_All_Color" forward="Show_All_Color"/>
+
+    <action path="/Show_Budget" forward="Show_Budget"/>
+    <action path="/Show_Base_Model" forward="Show_Base_Model"/>
+    <action path="/Show_Model" forward="Show_Model"/>
+    <action path="/Show_Target" forward="Show_Target"/>
+    <action path="/Show_Price" forward="Show_Price"/>
+    <action path="/Show_Color" forward="Show_Color"/>
+
+    <action path="/Add_Budget" forward="Add_Budget"/>
+    <action path="/Add_Base_Model" forward="Add_Base_Model"/>
+    <action path="/Add_Model" forward="Add_Model"/>
+    <action path="/Add_Target" forward="Add_Target"/>
+    <action path="/Add_Price" forward="Add_Price"/>
+    <action path="/Add_Color" forward="Add_Color"/>
+
+    <action path="/Delete_Budget" forward="Delete_Budget"/>
+    <action path="/Delete_BaseModel" forward="Delete_BaseModel"/>
+    <action path="/Delete_Model" forward="Delete_Model"/>
+    <action path="/Delete_Target" forward="Delete_Target"/>
+    <action path="/Delete_Price" forward="Delete_Price"/>
+    <action path="/Delete_Color" forward="Delete_Color"/>
+
+    <action path="/Edit_Budget" forward="Edit_Budget"/>
+    <action path="/Edit_Base_Model" forward="Edit_Base_Model"/>
+    <action path="/Edit_Model" forward="Edit_Model"/>
+    <action path="/Edit_Target" forward="Edit_Target"/>
+    <action path="/Edit_Price" forward="Edit_Price"/>
+    <action path="/Edit_Color" forward="Edit_Color"/>
+
+    <!-- configuration-presales ends here -->
+    
+
+    <!--presales starts here-->
+    <action input="/menu_1.jsp" name="Login_FormBean" path="/afterlogin" scope="session" type="Beans_Action.Login_Action">
+          <forward name="Ok" path="afterloginpage"></forward>
+        </action>
+
+        <action input="/Add_Action.jsp" name="Add_ActionFormBean" path="/addaction" scope="session" type="Beans_Action.Add_ActionAction" validate="false">
+                <forward name="Ok" path="afterloginpage"></forward>
+                <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+
+        <action input="/Add_Industry.jsp" name="Add_IndustryFormBean" path="/addindustry" scope="session" type="Beans_Action.Add_IndustryAction" validate="false">
+            <forward name="Ok" path="afterloginpage"></forward>
+                <forward name="Not Ok" path="/ff.jsp"></forward>
+            </action>
+        <action input="/Add_Area.jsp" name="Add_AreaFormBean" path="/Add_Area1" scope="session" type="Beans_Action.Add_AreaAction" validate="false">
+             <forward name="Ok" path="afterloginpage"></forward>
+                <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+
+         <action input="/menu1.jsp" name="ShowAll_ActionFormBean" path="/showallaction" scope="session" type="Beans_Action.ShowAll_Action">
+             <forward name="Ok" path="ShowAll_Action"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+
+        <action input="/menu1.jsp" name="ShowAll_IndustryFormBean" path="/showallindustry" scope="session" type="Beans_Action.ShowAl_IndustryAction" validate="false">
+            <forward name="Ok" path="ShowAll_Industry"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+        <action input="/menu1.jsp" name="Show_IndustryFormBean" path="/Show_Industry" scope="session" type="Beans_Action.Show_IndustryAction" validate="false">
+           <forward name="Ok" path="Show_Industry1"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+
+        <action input="/menu1.jsp" name="ShowAll_AreaFormBean" path="/ShowAll_Area" scope="session" type="Beans_Action.ShowAll_AreaAction" validate="false">
+       <forward name="Ok" path="ShowAll_Are"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+       </action>
+
+
+       <action input="/Edit_Area.jsp" name="Edit_AreaFormBean" path="/editarea" scope="session" type="Beans_Action.Edit_AreaAction" validate="false">
+         <forward name="Ok" path="afterloginpage"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+
+        </action>
+
+        <action input="/Add_Prospect.jsp" name="Add_ProspectFormBean" path="/addprospect" scope="session" type="Beans_Action.Add_ProspectAction" validate="false">
+            <forward name="Ok" path="afterloginpage"></forward>
+            <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+        <action input="/Delete_Prospect_1.jsp" name="DeleteProspect_formBean" path="/delprospect" scope="session" type="Beans_Action.DeleteProspect_Action" validate="false">
+            <forward name="Ok" path="afterloginpage"></forward>
+            <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+        <action input="/Edit_Prospect_1.jsp" name="EditProspect_FormBean" path="/editprospect" scope="session" type="Beans_Action.EditProspect_Action" validate="false">
+            <forward name="Ok" path="afterloginpage"></forward>
+            <forward name="Not Ok" path="/ff.jsp"></forward>
+            </action>
+        <action input="/Add_Case.jsp" name="AddCase_FormBean" path="/addcase" scope="session" type="Beans_Action.AddCase_Action">
+             <forward name="Ok" path="afterloginpage"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+          </action>
+        <action input="/Edit_Case.jsp" name="EditCase_FormBean" path="/editaction" scope="session" type="Beans_Action.EditCase_Action">
+            <forward name="Ok" path="afterloginpage"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+        <action input="/Delete_Case_1.jsp" name="DeleteCase_FormBean" path="/deletecase" scope="session" type="Beans_Action.DeleteCase_Action" validate="false">
+            <forward name="Ok" path="body.jsp"></forward>
+             <forward name="Not Ok" path="/ff.jsp"></forward>
+        </action>
+
+
+        <action path="/Add_Prospect" forward="Add_Prospect"/>
+        <action path="/deleteprospect" forward="Delete_Prospect"/>
+        <action path="/editprospect" forward="Edit_Prospect"/>
+        <action path="/showprospect" forward="Show_Prospect"/>
+
+        <action path="/Add_Case" forward="Add_Case"/>
+        <action path="/showcase" forward="Show_Case"/>
+        <action path="/deletecase1" forward="Delete_Case"/>
+        <action path="/editcase" forward="Edit_Case"/>
+
+
+
+        <action path="/Edit_Area" forward="Edit_Area"/>
+        <action path="/Welcome" forward="/welcomeStruts.jsp"/>
+        <action path="/myhome" forward="apphomepage"/>
+         <action path="/add_action" forward="add_action"/>
+         <action path="/ShowAll_Action" forward="showalaction"/>
+
+         <action path="/Add_Industry" forward="addindustry"/>
+         <action path="/ShowAll_Industry" forward="showalindustry"/>
+
+            <action path="/Show_Industry2" forward="Show_Industry1"/>
+
+          <action path="/Add_Area" forward="addarea"/>
+        <action path="/Show_Area" forward="showarea"/>
+
+         <action path="/Edit_Area" forward="Edit_Area"/>
+<!--presales end-->
+
+<!--values to customer start-->
+
+ <action input="/Addorder_1.jsp" name="Add_OrderFormBean" path="/addorder" scope="session" type="Beans_Action.Add_OrderAction" validate="false">
+           <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+        </action>
+        <action input="/Addfinanacesource.jsp" name="Add_Finance_SourceFormBean" path="/addfinance" scope="session" type="Beans_Action.Add_Finance_SourceAction">
+           <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+        </action>
+        <action input="/Addscheme.jsp" name="Add_SchemeFormBean" path="/addscheme" scope="session" type="Beans_Action.Add_SchemeAction">
+               <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+
+        </action>
+        <action input="/AddSource.jsp" name="Add_SourceFormBean" path="/addsource" scope="session" type="Beans_Action.Add_SourceAction">
+            <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+
+
+        </action>
+        <action input="/Deleteorder.jsp" name="Delete_OrderFormBean" path="/deleteorder" scope="session" type="Beans_Action.Delete_OrderAction">
+            <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+
+        </action>
+        <action input="/Deletescheme.jsp" name="Delete_SchemeFormBean" path="/deletescheme" scope="session" type="Beans_Action.Delete_SchemeAction">
+            <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+
+        </action>
+        <action input="/Editorder.jsp" name="Edit_OrderFormBean" path="/editorder" scope="session" type="Beans_Action.Edit_OrderAction">
+            <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+        </action>
+        <action input="/Editscheme.jsp" name="Edit_SchemeFormBean" path="/editscheme" scope="session" type="Beans_Action.Edit_SchemeAction">
+            <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+         </action>
+        <action input="/Payment.jsp" name="Add_PaymentFormBean" path="/addpayment" scope="session" type="Beans_Action.Add_PaymentAction">
+         <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+
+            </action>
+        <action input="/Editpaymentdetails.jsp" name="Edit_PaymentFormBean" path="/editpayment" scope="session" type="Beans_Action.Edit_PaymentAction">
+          <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+
+
+         </action>
+        <action input="/Delete_Source.jsp" name="DeleteSource_FormBean" path="/deletesource" scope="session" type="Beans_Action.DeleteSource_Action">
+           <forward name="ok" path="/Success.jsp"></forward>
+            <forward name="notok" path="/Fail.jsp"></forward>
+        </action>
+        
+      <action path="/AddOrderFrame" forward="AddOrderFrame1"/>
+      <action path="/AddSchemeFrame" forward="AddSchemeFrame1"/>
+        <action path="/AddSource" forward="AddSource1"/>
+        <action path="/AddFinanceSource" forward="Addfinanacesource1"/>
+        <action path="/AddPayment" forward="Addpayment1"/>
+
+         <action path="/DeleteOrderFrame" forward="DeleteOrderFrame1"/>
+        <action path="/DeleteSchemeFrame" forward="DeleteSchemeFrame1"/>
+        <action path="/DeleteSource" forward="Delete_Source1"/>
+
+
+         <action path="/EditOrderFrame" forward="EditOrderFrame1"/>
+        <action path="/EditSchemeFrame" forward="EditSchemeFrame1"/>
+         <action path="/EditPayment" forward="Editpaymentdetails1"/>
+
+
+
+          <action path="/ShowOrderFrame" forward="ShowOrderFrame1"/>
+      <action path="/ShowSchemeFrame" forward="ShowSchemeFrame1"/>
+        <action path="/ShowSource" forward="Show_Source1"/>
+        <action path="/ShowFinanceSource" forward="Showfinanacesource1"/>
+
+
+
+
+
+<!--values to customer ends-->
+
+<!--inventory reports start-->
+
+
+ <action input="/menu1.jsp" name="Overall_FormBean" path="/soldoverallreport" scope="session" type="Beans_Action.SoldOverall_Action">
+            <forward name="Ok" path="InventorySoldOverAllFrame"></forward>
+                    </action>
+        <action input="/menu1.jsp" name="OverAllStock_FormBean" path="/overallStock" scope="session" type="Beans_Action.OverAllStock_Action">
+             <forward name="Ok" path="InventoryOverallStockFrame"></forward>
+            
+        </action>
+        <action input="/InventoryReportByDate.jsp" name="InventoryByYear_Bean" path="/InventoryByYear" scope="session" type="Beans_Action.InventoryByYear_Action">
+            <forward name="ok" path="/InvertoryByYear_Display.jsp"/>
+        </action>
+        <action input="/InventoryReportByMonth.jsp" name="InventoryReportByMonth" path="/InventoryReportByMonth" scope="session" type="Beans_Action.InventoryReportByMonth_Action">
+        <forward name="ok" path="/InventoryReportByMonth_Display.jsp"/>
+        </action>
+
+         <action path="/InventoryByYearFrame" forward="InventoryByYearFrame"/>
+        <action path="/InventoryByMonthFrame" forward="InventoryByMonthFrame"/>
+
+       <action path="/InventoryStockFrame" forward="InventoryStockFrame"/>
+        <action path="/InventorySoldFrame" forward="InventorySoldFrame"/>
+
+
+        InventoryByYearFrame
+<!--inventory reports end-->
+
+
+
+<!-- Misc List starts here -->
+            <action input="/MiscList.jsp" name="MiscListBean" path="/misclist" scope="session" type="Beans_Action.MiscListAction" validate="false">
+                <forward name="Models"  path="Models"/>
+                <forward name="Branch"  path="Branch"/>
+                <forward name="Employee"  path="Employee"/>
+                <forward name="Target"  path="Target"/>
+                <forward name="Prospect"  path="Prospect"/>
+            </action>
+            <action input="/Models.jsp" name="ModelBean" path="/modelaction" scope="session" type="Beans_Action.ModelAction" validate="false">
+                <forward name="OK"  path="Branch_Name"/>
+                <forward name="NOTOK"  path="fail"/>
+            </action>
+            <action input="/Employee.jsp" name="EmployeeBean" path="/employeeaction" scope="session" type="Beans_Action.EmployeeAction" validate="false">
+                <forward name="OK" path="EmployeeTable"/>
+                <forward name="NOTOK" path="fail"/>
+            </action>
+            <action input="/Branch_Name.jsp" name="BranchNameBean" path="/branchname" scope="session" type="Beans_Action.BranchNameAction">
+                <forward name="OK" path="BranchNameTable"/>
+                <forward name="NOTOK" path="fail"/>
+            </action>
+            <action input="/Target.jsp" name="TargetBean" path="/targetaction" scope="session" type="Beans_Action.TargetAction" validate="false">
+            <forward name="OK"  path="Target_BaseModel"/>
+            <forward name="NOTOK"  path="fail"/>
+           </action>
+        <action input="/Target_BaseModel.jsp" name="TargetBaseBean" path="/targetbaseaction" scope="session" type="Beans_Action.TargetBaseAction" validate="false">
+            <forward name="OK"  path="TargetTable"/>
+            <forward name="NOTOK"  path="fail"/>
+        </action>
+            <action path="/MiscList_Action" forward="MiscList_Action"/>
+            <action path="/Models" forward="Models"/>
+
+
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/myapp/struts/ApplicationResource"/>    
+    
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>

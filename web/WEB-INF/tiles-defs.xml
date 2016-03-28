@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!--
+     This is a blank Tiles definition file with a commented example.
+-->
+
+<tiles-definitions>
+     <!-- Configuration tiles definitions -->
+
+    <definition name="apphomepage" path="/layout1.jsp">
+        <put name="menu" value="/menu_1.jsp"/>
+        <put name="body" value="/body.jsp"/>
+        <put name="head" value="/header_1.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="Logout" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="body" value="/Logout.jsp"/>
+        <put name="head" value="/header_1.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="afterloginpage" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="body" value="/body.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Add_orgpage" extends="afterloginpage">
+        <put name="body" value="/Add_Org_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    
+    <definition name="ShowAll_Org" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowAll_Org.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="Show_orgpage" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Org_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+ <definition name="Edit_orgpage" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Org_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="add_branch" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Branch_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="ShowALL_Branch" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowALL_Branch.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="showbranch" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Branch_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Edit_Branch" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Branch_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+<definition name="delete_branch" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Branch_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="add_teamtype" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_TeamType.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="add_team" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Team.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="ShowAll_TeamType" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowAll_TeamType.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_TeamType" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_TeamType.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="Edit_TeamType" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_TeamType.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Delete_TeamType" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_TeamType.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="ShowALL_Team" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowALL_Team.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="Show_Team" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Team.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+         <definition name="Edit_Team" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Team.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="Delete_Team" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Team.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Add_Employee" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Employee_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="ShowALL_Employee" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowALL_Employee.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="Show_EmpFull" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Employee_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="Edit_Employee" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Employee_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="Delete_Employee" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Employee_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+     <definition name="add_designation" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Designation.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="ShowAll_Designation" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowAll_Designation.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="ShowAll_Designation" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowAll_Designation.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_Designation" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Designation.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Edit_Designation" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Designation.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Delete_Designation" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Designation.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="fail" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="body" value="/ff.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="success" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="body" value="/ss.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <!-- configuration-presales starts here -->
+
+    <definition name="Add_Budget" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Budget.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Add_Base_Model" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Base_Model.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Add_Model" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Model.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Add_Target" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Target.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Add_Price" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Price.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Add_Color" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Color.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+
+    <definition name="Show_All_Budget" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_All_Budget.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_All_Base_Model" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_All_BaseModel.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_All_Model" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_All_Model.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_All_Target" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_All_Target.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_All_Price" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_All_Price.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_All_Color" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_All_Color.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="Show_Budget" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Budget.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_Base_Model" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Base_Model.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_Model" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Model.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_Target" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Target.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_Price" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Price.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_Color" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Color.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="Edit_Budget" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Budget.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Edit_Base_Model" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Base_Model.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Edit_Model" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Model.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Edit_Target" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Target.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Edit_Price" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Price.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Edit_Color" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Color.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="Delete_Budget" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Budget.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Delete_BaseModel" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Base_Model.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Delete_Model" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Model.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Delete_Target" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Target.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Delete_Price" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Price.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Delete_Color" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Color.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <!-- configuration-presales ends here -->
+
+    <!-- presales tiles definitions -->
+    <definition name="add_action" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Action.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="addindustry" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Industry.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+ <definition name="addarea" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Area.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+
+
+    <definition name="ShowAll_Action" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowAll_Action.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="ShowAll_Industry" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowAll_Industry.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_Industry1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Industry.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+
+
+    <definition name="showarea" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Area.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="Edit_Area" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Area.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="ShowAll_Are" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowAll_Area.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+
+ <definition name="Add_Prospect" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Prospect_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="Delete_Prospect" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Prospect_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="Edit_Prospect" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Prospect_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_Prospect" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Prospect_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+<definition name="Add_Case" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Add_Case_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+ <definition name="Delete_Case" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Case_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="Edit_Case" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Edit_Case_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Show_Case" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Case_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+     <!-- presales ends here -->
+
+     <!--valuse to customer start-->
+
+
+
+ <definition name="AddOrderFrame1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/AddOrderFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+      
+   <definition name="DeleteOrderFrame1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/DeleteOrderFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+   
+     <definition name="EditOrderFrame1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/EditOrderFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+
+    <definition name="ShowOrderFrame1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowOrderFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+
+      <definition name="AddSchemeFrame1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/AddSchemeFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="DeleteSchemeFrame1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/DeleteSchemeFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="EditSchemeFrame1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/EditSchemeFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="ShowSchemeFrame1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/ShowSchemeFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+        <definition name="AddSource1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/AddSource.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+       <definition name="Delete_Source1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Delete_Source.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+       <definition name="Show_Source1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Show_Source.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="Addpayment1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Addpayment.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+      <definition name="Editpaymentdetails1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Editpaymentdetails.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+     <definition name="Addfinanacesource1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Addfinanacesource.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+        <definition name="Showfinanacesource1" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Showfinanacesource.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+     <!---valuses to custmer end-->
+
+
+     <!---inventory reports starts-->
+ <definition name="InventorySoldOverAllFrame" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/InventorySoldOverAllFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="InventoryOverallStockFrame" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/InventoryOverallStockFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+   
+    <definition name="InventoryByYearFrame" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/InventoryByYearFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="InventoryByMonthFrame" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/InventoryByMonthFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+   
+ <definition name="InventoryStockFrame" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/InventoryStockFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="InventorySoldFrame" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/InventorySoldFrame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+
+    <!-- inventory reporsts end -->
+
+
+
+
+    <!-- Misc List tiles definitions -->
+    <definition name="MiscList_Action" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/MiscList.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+    <definition name="Models" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Models.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Branch" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Branch_Table_Frame.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Employee" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Employee.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Prospect" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Prospect.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Branch_Name" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Branch_Name.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="EmployeeTable" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/EmployeeTable.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="BranchNameTable" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/BranchNameTable.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Target" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Target.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="Target_BaseModel" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/Target_BaseModel.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+    <definition name="TargetTable" path="/layout1.jsp">
+        <put name="menu" value="/menu1.jsp"/>
+        <put name="head" value="/header.jsp"/>
+        <put name="body" value="/TargetTable.jsp"/>
+        <put name="foot" value="/footer.jsp"/>
+    </definition>
+
+
+    <definition name="${YOUR_DEFINITION_HERE}">
+    </definition>
+    
+<!-- end samples -->
+</tiles-definitions>
